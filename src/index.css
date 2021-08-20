@@ -165,13 +165,17 @@ h4 {
   transition: var(--transition-bg);
 }
 
+.button-4 h4{
+  color: var(--clr-b4-text);
+}
+
 .button-4:hover,
 .button-4:focus {
   background-color: var(--clr-b4-bg-hover);
   cursor: pointer;
 }
 
-.button-4.dark-theme {
+.button-4.dark-theme h4 {
   --clr-b4-text: #DFE3FA;
 }
 

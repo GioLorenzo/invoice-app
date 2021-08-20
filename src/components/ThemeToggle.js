@@ -1,4 +1,6 @@
-//temporary button for visualization purposes, delete this file when needed.
+//temporary button for light/dark mode visualization purposes, delete this file when needed.
+//checks body.classList for 'light-theme' or 'dark-theme'
+//replaces all classes of 'light-theme' to class 'dark-theme and visa-versa
 
 const ThemeToggle = () => {
   return (
