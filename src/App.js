@@ -16,7 +16,7 @@ function App() {
       <Button4 classList="button-4 btn light-theme" text="Save as Draft"/>
       <Button5 classList="button-5 btn" text="Delete"/>
       <Button6 classList="button-6 btn" text="Add New Item" />
-      <Dropdown classList='dropdown' text='Payment Terms' option1='Net 1 Day' option2='Net 7 Days' option3='Net 14 Days' option4='Net 30 Days'/>
+      <Dropdown text='Payment Terms' option1='Net 1 Day' option2='Net 7 Days' option3='Net 14 Days' option4='Net 30 Days'/>
     </>
   );
 }

@@ -5,10 +5,10 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
   
   return (
     <>
-    <h4 className='dropdown-h4'>{text}</h4>
-    <label className={classList}>
+      <h4 className='dropdown-h4 light-theme'>{text}</h4>
+    <label className='dropdown'>
       
-      <select className='select-box' value={dropdown} onChange={e => { setDropdown(e.target.value) }} onMouseDown={e => {
+      <select className='select-box light-theme' value={dropdown} onChange={e => { setDropdown(e.target.value) }} onMouseDown={e => {
           //mobile devices under 420px will revert to default dropdown styles
           if (window.innerWidth >= 420) {
             // creating new stylable ul component to maintain semantic html and SEO with <select> and <option> elements
@@ -21,7 +21,7 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
           //creating ul underneath <select> element
           const select = selector.children[0];
           const dropDown = document.createElement('ul');
-          dropDown.className = 'selector-options';
+          dropDown.className = 'selector-options light-theme';
 
           [...select.children].forEach(option => {
             const dropDownOption = document.createElement('li');
@@ -69,7 +69,6 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
 
 Dropdown.defaultProps = {
   text: 'Payment Terms',
-  classList: 'dropdown dropdown-select',
   option1: 'Net 1 Day',
   option2: 'Net 7 Days',
   option3: 'Net 14 Days',

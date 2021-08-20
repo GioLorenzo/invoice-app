@@ -222,8 +222,12 @@ h4 {
   pointer-events: none;
 }
 
+.dropdown-h4.dark-theme {
+  --clr-b3-text: #DFE3FA;
+}
+
 .dropdown select {
-  padding: 0 1.5em;
+  padding: 3px 0 0 1rem;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -233,6 +237,7 @@ h4 {
   background: url(./assets/down-arrow.svg) no-repeat right;
   background-color: var(--lightest);
   color: var(--clr-b4-bg-hover);
+  font-family: 'spartan';
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
