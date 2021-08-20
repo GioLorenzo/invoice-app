@@ -11,6 +11,7 @@ import ThemeToggle from "./components/ThemeToggle.js";
 function App() {
   return (
     <>
+      {/* theme toggle for light/dark button, delete when needed */}
       <ThemeToggle />
       <Button1 classList="button-1 btn" text="New Invoice"/>
       <Button2 classList="button-2 btn" text="Mark as Paid"/>
