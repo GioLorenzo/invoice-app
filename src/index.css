@@ -1,13 +1,77 @@
+/* Spartan Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  box-sizing: border-box;
+  font-family:'Spartan', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #0C0E16;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -1px;
 }
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.63px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+}
+
+.button-1 {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #7C5DFA;
+  width: 150px;
+  height: 48px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+.btn-icon {
+  padding: .5rem;
+  margin: 0.5rem;
+  background-color: #fff;
+  color: #7C5DFA;
+  border-radius: 50%;
+  justify-self: flex-start;
+}
+
+.button-1:hover .btn-icon {
+  color: #9277FF;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #9277FF;
+  cursor: pointer;
+}
+
+
+
