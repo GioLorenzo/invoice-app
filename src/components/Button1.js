@@ -13,4 +13,9 @@ const h4Styles = {
   margin: 'auto'
 }
 
+Button1.defaultProps = {
+  text: 'New Invoice',
+  classList: 'button-1'
+}
+
 export default Button1
