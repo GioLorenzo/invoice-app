@@ -201,6 +201,7 @@ h4 {
 
 .button-6 h4 {
   margin: auto 0;
+  color: #7E88C3;
 }
 
 .btn6-icon {
@@ -259,13 +260,14 @@ h4 {
 }
 
 .select-box.dark-theme {
-  --lightest: #252945;
+  --lightest: #1E2139;
   --clr-b4-bg-hover: #DFE3FA;
+  --clr-b3-bg-hover: #252945;
 }
 
 .select-box.dark-theme:hover, 
 .select-box.dark-theme:focus {
-  border: none;
+  border: 1px solid #252945;
 }
 
 .selector-options {

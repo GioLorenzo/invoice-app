@@ -4,15 +4,15 @@ const ThemeToggle = () => {
   return (
     <button onClick={() => {
       console.log(document.body);
-      if (document.querySelector('light-theme') !== 'undefined') {
-        console.log('yay');
+  
+      if (document.body.classList.contains('light-theme') !== false) {
         const lightTheme = document.querySelectorAll('.light-theme');
 
       lightTheme.forEach(e => {
         e.classList.remove('light-theme');
         e.classList.add('dark-theme');
       });
-      } else if (document.querySelector('dark-theme') !== 'undefined') {
+      } else if (document.body.classList.contains('light-theme') === false){
         const darkTheme = document.querySelectorAll('.dark-theme');
 
       darkTheme.forEach(e => {
