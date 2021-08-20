@@ -9,10 +9,11 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
     <label className={classList}>
       
       <select className='select-box' value={dropdown} onChange={e => { setDropdown(e.target.value) }} onMouseDown={e => {
-        if (window.innerWidth >= 420) {
+          //mobile devices under 420px will revert to default dropdown styles
+          if (window.innerWidth >= 420) {
             // creating new stylable ul component to maintain semantic html and SEO with <select> and <option> elements
-
-          const selector = document.querySelector('.dropdown');
+          if (!document.body.contains(document.querySelector('.selector-options'))) {
+            const selector = document.querySelector('.dropdown');
           //keeping options and original dropdown from activating
           e.preventDefault();
           e.target.focus();
@@ -40,10 +41,20 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
 
           //menu close on click out
           document.addEventListener('click', e => {
-            if (!select.contains(e.target) || typeof(dropDown) != 'undefined') {
+            if (!select.contains(e.target)) {
               dropDown.remove();
             }
           });
+          }
+          
+          //menu close on clicking box while ul exists
+          else {
+            e.preventDefault();
+            const dropDown = document.querySelector('.selector-options');
+            dropDown.remove();
+            e.target.blur();
+          }
+          
         }
       }}>
         <option value={option1}>{option1}</option>

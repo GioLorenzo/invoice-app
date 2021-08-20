@@ -243,7 +243,7 @@ h4 {
 
 .select-box:hover, 
 .select-box:focus {
-  outline: 1px solid var(--clr-purple);
+  border: 1px solid var(--clr-purple);
 }
 
 .selector-options {
