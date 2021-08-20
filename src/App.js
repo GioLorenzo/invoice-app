@@ -5,11 +5,13 @@ import Button4 from "./components/Button4.js";
 import Button5 from "./components/Button5.js";
 import Button6 from "./components/Button6.js";
 import Dropdown from "./components/Dropdown.js";
+import ThemeToggle from "./components/ThemeToggle.js";
 
 
 function App() {
   return (
     <>
+      <ThemeToggle />
       <Button1 classList="button-1 btn" text="New Invoice"/>
       <Button2 classList="button-2 btn" text="Mark as Paid"/>
       <Button3 classList="button-3 btn light-theme" text="Edit"/>

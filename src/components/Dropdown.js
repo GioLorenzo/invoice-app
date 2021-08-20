@@ -19,7 +19,11 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
           //creating ul underneath <select> element
           const select = selector.children[0];
           const dropDown = document.createElement('ul');
-          dropDown.className = 'selector-options light-theme';
+            if (select.classList.contains('light-theme')) {
+            dropDown.className = 'selector-options light-theme';
+            } else if (select.classList.contains('dark-theme')) {
+            dropDown.className = 'selector-options dark-theme';
+          }
 
           [...select.children].forEach(option => {
             const dropDownOption = document.createElement('li');

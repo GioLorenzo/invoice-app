@@ -3,14 +3,16 @@
 const ThemeToggle = () => {
   return (
     <button onClick={() => {
-      if (document.body.contains('.light-theme')) {
+      console.log(document.body);
+      if (document.querySelector('light-theme') !== 'undefined') {
+        console.log('yay');
         const lightTheme = document.querySelectorAll('.light-theme');
 
       lightTheme.forEach(e => {
         e.classList.remove('light-theme');
         e.classList.add('dark-theme');
       });
-      } else if (document.body.contains('.dark-theme')) {
+      } else if (document.querySelector('dark-theme') !== 'undefined') {
         const darkTheme = document.querySelectorAll('.dark-theme');
 
       darkTheme.forEach(e => {
