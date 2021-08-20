@@ -149,6 +149,28 @@ h4 {
   --clr-b3-bg-hover: #FFF;
 }
 
+.button-4 {
+  width: 133px;
+  color: var(--clr-b4-text);
+  background-color: var(--clr-b4-bg);
+  transition: var(--transition-bg);
+}
+
+.button-4:hover,
+.button-4:focus {
+  background-color: var(--clr-b4-bg-hover);
+  cursor: pointer;
+}
+
+.button-4.dark-theme {
+  --clr-b4-text: #DFE3FA;
+}
+
+.button-4.dark-theme:hover,
+.button-4.dark-theme:focus {
+  --clr-b4-bg-hover: #1E2139;
+}
+
 .button-5 {
   color: var(--lightest);
   background-color: var(--clr-red);
