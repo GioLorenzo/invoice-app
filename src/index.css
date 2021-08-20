@@ -22,6 +22,9 @@
   --clr-b4-bg-hover: #0C0E16;
   --clr-b4-text: #888EB0;
   --lightest: #fff;
+
+  --transition-bg: background-color 150ms ease-in-out;
+  --transition-clr: color 150ms ease-in-out;
 }
 
 
@@ -86,7 +89,7 @@ h4 {
   width: 150px;
   background-color: var(--clr-purple);
   color: var(--lightest);
-  transition: all 150ms ease-in-out;
+  transition: var(--transition-bg);
 }
 
 .btn1-icon {
@@ -96,7 +99,7 @@ h4 {
   color: var(--clr-purple);
   border-radius: 50%;
   justify-self: flex-start;
-  transition: color 150ms ease-in-out;
+  transition: var(--transition-clr);
 }
 
 .button-1:hover .btn1-icon,
@@ -114,7 +117,7 @@ h4 {
   width: 131px;
   background-color: var(--clr-purple);
   color: var(--lightest);
-  transition: background-color 150ms ease-in-out;
+  transition: var(--transition-bg);
 }
 
 .button-2:hover,
@@ -123,11 +126,24 @@ h4 {
   cursor: pointer;
 }
 
+.button-3 {
+  width: 73px;
+  color: var(--clr-b3-text);
+  background-color: var(--clr-b3-bg);
+  transition: var(--transition-bg);
+}
+
+.button-3:hover,
+.button-3:focus {
+  background-color: var(--clr-b3-bg-hover);
+  cursor: pointer;
+}
+
 .button-5 {
   color: var(--lightest);
   background-color: var(--clr-red);
   width: 89px;
-  transition: background-color 150ms ease-in-out;
+  transition: var(--transition-bg);
 }
 
 .button-5:hover,
@@ -143,7 +159,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 150ms ease-in-out;
+  transition: var(--transition-bg);
 } 
 
 .button-6 h4 {
