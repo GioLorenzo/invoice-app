@@ -9,8 +9,6 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
     <label className='dropdown'>
       
       <select className='select-box light-theme' value={dropdown} onChange={e => { setDropdown(e.target.value) }} onMouseDown={e => {
-          //mobile devices under 420px will revert to default dropdown styles
-          if (window.innerWidth >= 420) {
             // creating new stylable ul component to maintain semantic html and SEO with <select> and <option> elements
           if (!document.body.contains(document.querySelector('.selector-options'))) {
             const selector = document.querySelector('.dropdown');
@@ -54,9 +52,8 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
             dropDown.remove();
             e.target.blur();
           }
-          
         }
-      }}>
+      }>
         <option value={option1}>{option1}</option>
         <option value={option2}>{option2}</option>
         <option value={option3}>{option3}</option>
