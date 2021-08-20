@@ -22,6 +22,7 @@
   --clr-b4-bg: #373B53;
   --clr-b4-bg-hover: #0C0E16;
   --clr-b4-text: #888EB0;
+  --clr-bg-light: #F8F8F8;
   --lightest: #fff;
 
   --transition-bg: background-color 150ms ease-in-out;
@@ -37,8 +38,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--lightest);
-  background-color: var(--clr-b4-bg-hover);
+  color: var(--clr-b4-bg-hover);
+  background-color: var(--lightest);
 }
 
 h1 {
@@ -277,7 +278,7 @@ h4 {
   letter-spacing: -0.25px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 5px 20px 5px rgba(0,0,0, 0.7);
+  box-shadow: 0 10px 20px -10px rgba(0,0,0, 0.5);
 }
 
 .selector-options.dark-theme {
