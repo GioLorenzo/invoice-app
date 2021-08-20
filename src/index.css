@@ -10,6 +10,22 @@
   
 }
 
+:root {
+  --clr-purple: #7C5DFA;
+  --clr-purple-hover: #9277FF;
+  --clr-red: #EC5757;
+  --clr-red-hover: #9277FF;
+  --clr-b3-bg: #F9FAFE;
+  --clr-b3-bg-hover: #DFE3FA;
+  --clr-b3-text: #7E88C3;
+  --clr-b4-bg: #373B53;
+  --clr-b4-bg-hover: #0C0E16;
+  --clr-b4-text: #888EB0;
+  --lightest: #fff;
+}
+
+
+
 body {
   padding: 0;
   margin: 0;
