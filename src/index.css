@@ -278,7 +278,7 @@ h4 {
   letter-spacing: -0.25px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 20px -10px rgba(0,0,0, 0.5);
+  box-shadow: 0 8px 18px -10px rgba(0,0,0, 0.7);
 }
 
 .selector-options.dark-theme {
