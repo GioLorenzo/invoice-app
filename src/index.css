@@ -7,6 +7,7 @@
   display: grid;
   place-content: center;
   gap: 1em;
+  
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #0C0E16;
+  background-color: #0C0E16;
 }
 
 h1 {
@@ -116,6 +118,32 @@ h4 {
   background-color: #ff9797;
   cursor: pointer;
 }
+
+.button-6 {
+  width: 350px;
+  background-color: #f9fafe;
+  color: #979797;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 150ms ease-in-out;
+} 
+
+.button-6 h4 {
+  margin: auto 0;
+}
+
+.btn6-icon {
+  margin-right: .25rem;
+}
+
+.button-6:hover,
+.button-6:focus {
+  background-color: #dfe3fa;
+  cursor: pointer;
+}
+
+
 
 
 

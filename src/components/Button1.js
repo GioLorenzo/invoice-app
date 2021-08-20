@@ -11,7 +11,7 @@ const Button1 = ({classList, text}) => {
 
 Button1.defaultProps = {
   text: 'New Invoice',
-  classList: 'button-1'
+  classList: 'button-1 btn'
 }
 
 export default Button1
