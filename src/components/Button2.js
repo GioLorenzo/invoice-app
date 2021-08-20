@@ -1,4 +1,3 @@
-
 const Button2 = ({classList, text}) => {
   return (
     <button className={classList}>
