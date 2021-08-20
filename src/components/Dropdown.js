@@ -4,16 +4,21 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
   const [dropdown, setDropdown] = useState('Net 30 Days');
   
   return (
+    <>
+    <h4 className='dropdown-h4'>{text}</h4>
     <label className={classList}>
-      <h4>{text}</h4>
+      
       <select className='select-box' value={dropdown} onChange={e => { setDropdown(e.target.value) }} onMouseDown={e => {
-        // creating new stylable ul component to maintain semantic html and SEO with <select> and <option> elements
+        if (window.innerWidth >= 420) {
+          // creating new stylable ul component to maintain semantic html and SEO with <select> and <option> elements
 
-        const selector = document.querySelector('.dropdown')
+        const selector = document.querySelector('.dropdown');
+        //keeping options and original dropdown from activating
         e.preventDefault();
         e.target.focus();
 
-        const select = selector.children[1];
+        //creating ul underneath <select> element
+        const select = selector.children[0];
         const dropDown = document.createElement('ul');
         dropDown.className = 'selector-options';
 
@@ -21,6 +26,7 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
           const dropDownOption = document.createElement('li');
           dropDownOption.textContent = option.textContent;
 
+          //adding user selection to dom
           dropDownOption.addEventListener('mousedown', e => {
             e.stopPropagation();
             select.value = option.value;
@@ -34,17 +40,19 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
 
         //menu close on click out
         document.addEventListener('click', e => {
-          if (!selector.contains(e.target)) {
+          if (!select.contains(e.target) ) {
             dropDown.remove();
           }
         });
-      }}>
+      }}
+        }>
         <option value={option1}>{option1}</option>
         <option value={option2}>{option2}</option>
         <option value={option3}>{option3}</option>
         <option value={option4}>{option4}</option>
       </select>
-    </label>
+      </label>
+      </>
   );
 }
 

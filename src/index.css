@@ -213,12 +213,13 @@ h4 {
   display: inline-block;
   text-decoration: none;
   height: 48px;
-  
 }
 
-.dropdown h4 {
+.dropdown-h4 {
+  margin: 0;
   font-weight: 400;
   color: var(--clr-b3-text);
+  pointer-events: none;
 }
 
 .dropdown select {
