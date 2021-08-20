@@ -83,7 +83,8 @@ h4 {
   transition: color 150ms ease-in-out;
 }
 
-.button-1:hover .btn1-icon {
+.button-1:hover .btn1-icon,
+.button-1:focus .btn1-icon {
   color: #9277FF;
 }
 
