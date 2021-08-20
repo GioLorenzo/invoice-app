@@ -139,6 +139,16 @@ h4 {
   cursor: pointer;
 }
 
+.button-3.dark-theme {
+  --clr-b3-text: #DFE3FA;
+  --clr-b3-bg: #252945;
+}
+
+.button-3.dark-theme:hover,
+.button-3.dark-theme:focus {
+  --clr-b3-bg-hover: #FFF;
+}
+
 .button-5 {
   color: var(--lightest);
   background-color: var(--clr-red);

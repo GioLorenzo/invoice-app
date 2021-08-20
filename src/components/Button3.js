@@ -10,7 +10,7 @@ const Button3 = ({classList, text}) => {
 
 Button3.defaultProps = {
   text: 'Edit',
-  classList: 'button-3 btn'
+  classList: 'button-3 btn light-theme'
 }
 
 export default Button3
