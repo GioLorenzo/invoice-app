@@ -4,6 +4,7 @@ import Button3 from "./components/Button3.js";
 import Button4 from "./components/Button4.js";
 import Button5 from "./components/Button5.js";
 import Button6 from "./components/Button6.js";
+import Dropdown from "./components/Dropdown.js";
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <Button3 classList="button-3 btn light-theme" text="Edit"/>
       <Button4 classList="button-4 btn light-theme" text="Save as Draft"/>
       <Button5 classList="button-5 btn" text="Delete"/>
-      <Button6 classList="button-6 btn" text="Add New Item"/>
+      <Button6 classList="button-6 btn" text="Add New Item" />
+      <Dropdown />
     </>
   );
 }
