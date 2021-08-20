@@ -1,6 +1,14 @@
 /* Spartan Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+#root{
+   /* For button display purposes, delete this selector when needed*/
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 1em;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -41,17 +49,25 @@ h4 {
   letter-spacing: -0.25px;
 }
 
-.button-1 {
+.btn {
   display: flex;
-  justify-content: space-between;
-  color: #fff;
-  background-color: #7C5DFA;
-  width: 150px;
+  justify-content: center;
   height: 48px;
   outline: none;
   border: none;
   text-decoration: none;
   border-radius: 100px;
+}
+
+.btn h4 {
+  margin:auto;
+}
+
+.button-1 {
+  justify-content: space-between;
+  width: 150px;
+  background-color: #7C5DFA;
+  color: #fff;
 }
 
 .btn-icon {
@@ -69,6 +85,18 @@ h4 {
 
 .button-1:hover,
 .button-1:focus {
+  background-color: #9277FF;
+  cursor: pointer;
+}
+
+.button-2 {
+  width: 131px;
+  background-color: #7C5DFA;
+  color: #fff;
+}
+
+.button-2:hover,
+.button-2:focus {
   background-color: #9277FF;
   cursor: pointer;
 }

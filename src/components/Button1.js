@@ -4,18 +4,14 @@ const Button1 = ({classList, text}) => {
   return (
     <button className={classList}>
       <Button1Icon classList='btn-icon' />
-      <h4 style={h4Styles}>{text}</h4>
+      <h4>{text}</h4>
     </button>
   )
 }
 
-const h4Styles = {
-  margin: 'auto'
-}
-
 Button1.defaultProps = {
   text: 'New Invoice',
-  classList: 'button-1'
+  classList: 'button-1 btn'
 }
 
 export default Button1
