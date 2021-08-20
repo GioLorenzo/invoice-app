@@ -226,7 +226,8 @@ h4 {
   --clr-b3-text: #DFE3FA;
 }
 
-.dropdown select {
+.select-box {
+  position: relative;
   padding: 3px 0 0 1rem;
   margin: 0;
   width: 100%;
@@ -251,7 +252,19 @@ h4 {
   border: 1px solid var(--clr-purple);
 }
 
+.select-box.dark-theme {
+  --lightest: #252945;
+  --clr-b4-bg-hover: #DFE3FA;
+}
+
+.select-box.dark-theme:hover, 
+.select-box.dark-theme:focus {
+  border: none;
+}
+
 .selector-options {
+  position: absolute;
+  width: 100%;
   list-style: none;
   padding: 0;
   margin-top: 1.5rem;
@@ -267,6 +280,10 @@ h4 {
   box-shadow: 0 5px 20px 5px rgba(0,0,0, 0.7);
 }
 
+.selector-options.dark-theme {
+  --lightest: #252945;
+  --clr-b4-bg-hover: #DFE3FA;
+}
 
 .selector-options li {
   padding: 1rem 1.25rem;
@@ -277,6 +294,10 @@ h4 {
 
 .selector-options li:hover {
   color: var(--clr-purple);
+}
+
+.selector-options.dark-theme li {
+  --clr-b3-bg-hover: #1E2139;
 }
 
 
