@@ -9,7 +9,7 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
       <select className='select-box' value={dropdown} onChange={e => { setDropdown(e.target.value) }} onMouseDown={e => {
         // creating new stylable ul component to maintain semantic html and SEO with <select> and <option> elements
 
-        const selector = document.querySelector('.dropdown-select')
+        const selector = document.querySelector('.dropdown')
         e.preventDefault();
         e.target.focus();
 
@@ -20,9 +20,24 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
         [...select.children].forEach(option => {
           const dropDownOption = document.createElement('li');
           dropDownOption.textContent = option.textContent;
+
+          dropDownOption.addEventListener('mousedown', e => {
+            e.stopPropagation();
+            select.value = option.value;
+            selector.value = option.value;
+            dropDown.remove();
+          });
+
           dropDown.appendChild(dropDownOption);
         });
         selector.appendChild(dropDown);
+
+        //menu close on click out
+        document.addEventListener('click', e => {
+          if (!selector.contains(e.target)) {
+            dropDown.remove();
+          }
+        });
       }}>
         <option value={option1}>{option1}</option>
         <option value={option2}>{option2}</option>
