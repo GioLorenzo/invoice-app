@@ -227,10 +227,13 @@ h4 {
   border-radius: 5px;
   outline: none;
   border: 1px solid var(--clr-b3-bg-hover);
-  background: url(./assets/down-arrow.svg) no-repeat right 10%;
+  background: url(./assets/down-arrow.svg) no-repeat right;
   background-color: var(--lightest);
   color: black;
   font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
   cursor: pointer;
   appearance: none;
 }
@@ -238,6 +241,7 @@ h4 {
 .dropdown option {
   background: var(--lightest);
   font-weight: inherit;
+  cursor: pointer;
 }
 
 

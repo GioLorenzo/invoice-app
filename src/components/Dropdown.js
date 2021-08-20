@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
   const [dropdown, setDropdown] = useState('Net 30 Days');
   return (
-    <div className={classList}>
+    <label className={classList}>
       <h4>{text}</h4>
       <select value={dropdown} onChange={ e => {setDropdown(e.target.value)} }>
         <option value={option1}>{option1}</option>
@@ -11,7 +11,7 @@ const Dropdown = ({classList, text, option1, option2, option3, option4}) => {
         <option value={option3}>{option3}</option>
         <option value={option4}>{option4}</option>
       </select>
-    </div>
+    </label>
   )
 }
 
