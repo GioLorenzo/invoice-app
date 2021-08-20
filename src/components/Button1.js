@@ -1,9 +1,9 @@
-import Button1Icon from "./Button1Icon"
+import PlusIcon from "./PlusIcon.js"
 
 const Button1 = ({classList, text}) => {
   return (
     <button className={classList}>
-      <Button1Icon classList='btn-icon' />
+      <PlusIcon classList='btn1-icon' />
       <h4>{text}</h4>
     </button>
   )
@@ -11,7 +11,7 @@ const Button1 = ({classList, text}) => {
 
 Button1.defaultProps = {
   text: 'New Invoice',
-  classList: 'button-1 btn'
+  classList: 'button-1'
 }
 
 export default Button1
