@@ -3,10 +3,11 @@
 
 #root{
    /* For button display purposes, delete this selector when needed*/
-  height: 100vh;
+  height: 120vh;
   display: grid;
   place-content: center;
   gap: 1em;
+  
   
 }
 
@@ -221,7 +222,8 @@ h4 {
 }
 
 .dropdown select {
-  padding: 0 1em;
+  padding: 0 1.5em;
+  margin: 0;
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -229,7 +231,7 @@ h4 {
   border: 1px solid var(--clr-b3-bg-hover);
   background: url(./assets/down-arrow.svg) no-repeat right;
   background-color: var(--lightest);
-  color: black;
+  color: var(--clr-b4-bg-hover);
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
@@ -238,12 +240,38 @@ h4 {
   appearance: none;
 }
 
-.dropdown option {
-  background: var(--lightest);
-  font-weight: inherit;
-  cursor: pointer;
+.select-box:hover, 
+.select-box:focus {
+  border: 1px solid var(--clr-purple);
 }
 
+.selector-options {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  background-color: var(--lightest);
+  height:min-content;
+  color: var(--clr-b4-bg-hover);
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px 5px rgba(0,0,0, 0.7);
+}
+
+
+.selector-options li {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--clr-b3-bg-hover);
+  cursor: pointer;
+  transition: var(--transition-clr);
+}
+
+.selector-options li:hover {
+  color: var(--clr-purple);
+}
 
 
 
